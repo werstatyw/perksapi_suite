@@ -13,6 +13,6 @@ def auth_req():
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
-    return print(response.text)
+    return response.status_code
     
 auth_req()

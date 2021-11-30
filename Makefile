@@ -14,6 +14,9 @@ debug:
 one-test:
 	python -m pytest -vv tests/test_greeting.py::test_my_name4
 
+two-test:
+    python -m pytest -vv tests/test_perksapiauth.py
+
 debugthree:
 	#not working the way I expect
 	python -m pytest -vv --pdb --maxfail=4  # drop to PDB for first three failures

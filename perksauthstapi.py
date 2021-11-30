@@ -4,7 +4,7 @@ import json
 url = "https://test3.perksdev.com/api/v1/Authorize"
 
 payload = json.dumps({
-  "email": "psst@tsst33.com",
+  "email": "psst@tsst.com",
   "password": "Test123!"
 })
 headers = {
@@ -13,4 +13,4 @@ headers = {
 
 response = requests.request("POST", url, headers=headers, data=payload)
 
-print(response.text)
+print(response.status_code)
