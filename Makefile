@@ -12,10 +12,7 @@ debug:
 	python -m pytest -vv --pdb	#Debugger is invoked
 
 one-test:
-	python -m pytest -vv tests/test_greeting.py::test_my_name4
-
-two-test:
-    python -m pytest -vv tests/test_perksapiauth.py
+	python -m pytest -vv tests/test_perksapiauth.py
 
 debugthree:
 	#not working the way I expect
