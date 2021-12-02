@@ -1,6 +1,7 @@
 def auth_req():
     import requests
     import json
+    import scriptconfig as cfg
 
     url = "https://test3.perksdev.com/api/v1/Authorize"
 
@@ -8,7 +9,8 @@ def auth_req():
     headers = {"Content-Type": "application/json"}
 
     response = requests.request("POST", url, headers=headers, data=payload)
+    bearer = print(response.text)
     return response.status_code
-
+    
 
 auth_req()
