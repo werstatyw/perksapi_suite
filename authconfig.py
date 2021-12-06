@@ -24,4 +24,5 @@ response = requests.request("POST", url, headers=headers, data=payload)
 
 #data1 = json.load(response.text)
 x = json.loads(response.text, object_hook=lambda d: SimpleNamespace(**d))
-print(x.accessToken)
+bearer = x.accessToken
+print(bearer)
