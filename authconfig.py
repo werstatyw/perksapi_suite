@@ -1,12 +1,18 @@
 import requests
 import json
+import scriptconfig as cfg
 from types import SimpleNamespace
-url = "https://test3.perksdev.com/api/v1/Authorize"
+url = cfg.url+"Authorize"
+print(url)
+logindata = {
+  'email': cfg.email,
+  'password': cfg.pwd
+}
+payload = json.dumps(logindata)
 
-payload = json.dumps({
-  "email": "psst@tsst.com",
-  "password": "Test123!"
-})
+#payload='{"message":"' +str(s)+ '"}'
+#payload['email']=cfg.email
+#payload['password']=cfg.pwd
 headers = {
   'Content-Type': 'application/json'
 }
