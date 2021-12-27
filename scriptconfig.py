@@ -4,7 +4,7 @@ import random
 url = "https://test3.perksdev.com/api/v1/"
 # this is for bearer token generation
 email = "psst@tsst.com"
-pwd = "Test123!"
+pwd = "pwd"
 # this is for singup process
 a = random.randint(1, 256)
 code = "test3"
